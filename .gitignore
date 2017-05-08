@@ -1,3 +1,5 @@
+.texpadtmp
+*.tdo
 # editor files
 *~
 \#*
@@ -7,7 +9,7 @@
 *.log
 *.nav
 *.out
-*.pdf
+.pdf
 *.snm
 *.toc
 *.loa
