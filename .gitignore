@@ -1,11 +1,11 @@
-document.pdf
+root.pdf
 .DS_STORE
 .texpadtmp
 *.tdo
 # editor files
 *~
 \#*
-
+.build
 # *TeX files
 *.aux
 *.log

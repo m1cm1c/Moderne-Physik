@@ -1,0 +1,105 @@
+\documentclass[oneside]{book}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathtools} 
+\usepackage{remreset} 
+\usepackage{amssymb}
+\usepackage{upgreek}
+\usepackage{lmodern}
+\usepackage{tikz}
+\usepackage{color, soul}
+\usepackage{xparse}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,naturalnames]{hyperref}
+\usepackage[colorinlistoftodos]{todonotes}
+\allowdisplaybreaks[3]
+\usepackage{stmaryrd}
+\usepackage{siunitx}
+\usepackage{paralist}
+\usepackage{braket}
+\usepackage{pgfplots}
+\usepackage{dsfont}
+
+\theoremstyle{definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{bemerkung*}{Bemerkung}
+\newtheorem*{beispiel*}{Beispiel}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{folgerung*}{Folgerung}
+\newtheorem{lemma}[equation]{Lemma}
+\newtheorem{satz}[equation]{Satz}
+\newtheorem{folgerung}[equation]{Folgerung}
+
+\newcommand\setN{\mathbb N}
+\newcommand\setZ{\mathbb Z}
+\newcommand\setC{\mathbb C}
+\newcommand\setQ{\mathbb Q}
+\newcommand\setR{\mathbb R}
+\newcommand\setP{\mathbb P}
+\newcommand\bigO{\mathcal O}
+
+\newcommand\norm[1]{\|#1\|}
+\newcommand\starrightarrow{\stackrel{*}{\rightarrow}}
+\newcommand\starleftarrow{\stackrel{*}{\leftarrow}}
+\newcommand\ue{\text{\emph{ü}}}
+\newcommand\Ue{\text{\emph{Ü}}}
+\newcommand{\conseq}{$\rightarrow$~}
+\newcommand{\QM}{Quantenmechanik}
+\newcommand{\SRT}{Spezielle Relativitätstheorie}
+\newcommand{\Dgl}{Differentialgleichung}
+\newcommand{\Dglen}{Differentialgleichungen}
+\newcommand{\circled}[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+
+\renewcommand{\d}{\mathrm d}
+\newcommand{\md}{\d}
+\newcommand{\dd}[1]{\frac{\d}{\d #1}}
+\newcommand{\ddd}[2]{\frac{\d #1}{\d #2}}
+\newcommand{\tvector}[1]{\begin{pmatrix}#1\end{pmatrix}}
+\newcommand{\rvec}{\vec{r}}
+\newcommand{\ddv}[1]{\ddot{\vec{#1}}}
+\newcommand{\fpartial}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\ffpartial}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\dotvec}[1]{\dot{\vec{#1}}}
+\newcommand{\ddotvec}[1]{\ddot{\vec{#1}}}
+\newcommand{\vardots}[2]{#1_1, \dots, #1_#2}
+\newcommand{\vecdotnumsq}[2]{\dot{\vec{#1}}^2_#2}
+\newcommand{\tfin}{t_\text{fin}}
+\newcommand{\const}{\text{konstant}}
+\newcommand{\vp}{\varphi}
+\newcommand{\dvp}{\dot{\vp}}
+\newcommand{\ddvp}{\ddot{\vp}}
+\renewcommand{\Re}{\mathbb{R}}
+\newcommand{\Co}{\mathbb{C}}
+\DeclareMathOperator{\arsinh}{arsinh}
+\DeclareMathOperator{\arcosh}{arcosh}
+\newcommand{\celectron}{\circled{$e^-$}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\DeclareSIUnit\year{a}
+\DeclareSIUnit{\lightyear}{Lj}
+
+\title{Moderne Physik Mitschrieb}
+\author{Johannes Bechberger und \href{https://github.com/parttimenerd/Moderne-Physik/graphs/contributors}{andere}}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\include{1-einfuehrung}
+	\include{2-klassische-mechanik}
+	\include{3-relativitaet}
+	\include{4-quantenmechanik}
+	\appendix
+	\include{5-organisatorisches}
+	\include{6-mathematische-grundlagen}
+\end{document}
