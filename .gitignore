@@ -11,7 +11,7 @@ root.pdf
 *.log
 *.nav
 *.out
-.pdf
+
 *.snm
 *.toc
 *.loa
