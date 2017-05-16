@@ -727,24 +727,30 @@ $$\vec{q}(t) = (q_1(t), \dots, q_s(t))$$
 ein $\vec{q}(t)$ beschreibt einen Zustand des gesamten Systems. Für gegebene $\vec{q}(t)$ und $\dot{\vec{q}}(t)$ wird die Lagrange-Funktion eine Funktion der Zeit 
 $$L(\vec{q}(t), \dotvec{q}(t), t) = \tilde{L}(t)$$
 
-\begin{definition*}[Wirkungsintegral]
+\begin{definition*}[Wirkungsfunktional]
 $$S\{\vec{q}(t)\} = \int_{t_1}^{t_2} \tilde{L}(t) \d t$$
-Die Dimension hiervon ist "`Wirkung"' \conseq Energie: Die Zahl
+Die Dimension hiervon ist "`Wirkung"' \conseq Energie:
 $S$ hängt von $\vec{q}(t)$ und $t_1, t_2$ ab. 
 Funktion $\vec{q}(t) \xrightarrow{\text{Abbildung}} S \{ \vec{q}(t) \}$ im allgemeinen Funktional.
 
-Wir betrachten Scharen $\vec{q}(t)$ mit den gleichen Endpunkten $\vec{q}(t_1)$ und $\vec{q}(t_2)$.	
+Wir betrachten Scharen $\vec{q}(t)$ mit den gleichen Endpunkten $\vec{q}(t_1)$ und $\vec{q}(t_2)$. Virtuelle Verrückungen müssen verschwinden.	
 \end{definition*}
 
 
 Beim Hamiltonschen Prinzip wird nun die Bahn des Systems betrachtet und wir wollen eine extremale Bahn finden.
 
 ~\\
+\begin{definition*}[Hamiltonsches Prinzip]
 Die Systembewegung erfolgt so, dass $S\{\vec{q}(t)\}$ für die richtige Trajektorie extremal wird, d.h. dass die Variation bezüglich der tatsächlichen Bahn verschwindet.
 $$\delta S = \delta \int_{t_1}^{t_2} L(\vec{q}(t), \dotvec{q}(t), t) \d t \overset{!}{=} 0$$
+\end{definition*}
 
 \begin{bemerkung*}
 	Die Gleichung $\delta S = 0$ enthält auf elegante Weise die gesamte klassische Mechanik. Das Prinzip (der Minimierung der Trajektorie) wird auch jenseits der Mechanik verwendet\footnote{Zum Beispiel in der Teilchenphysik, der geometrischen Optik (Fermatsches Prinzip, dabei bewegt sich Licht auf einer Bahn, so dass die benötigte Zeit minimal ist. Damit können die Brechungsindizes gefunden werden.)}. Es ist natürlich koordinatenunabhängig.
+\end{bemerkung*}
+
+\begin{bemerkung*}
+	Das Hamiltonsche Prinzip wird auch jenseits der klassischen Mechanik verwendet. Beispielsweise in der Teilchenphysik (Quantenfeldtheorie) oder in der Optik.
 \end{bemerkung*}
 
 \subsubsection{Äquivalenz zum Prinzip von d'Alembert}
